@@ -11,7 +11,7 @@ class DefaultConfig extends Config((site, here, up) => {
   case BUILDALU => (p: Parameters) => Module(new ALUSimple()(p))
   case BUILDBR   => (p: Parameters) => Module(new BrCondSimple()(p))
   case BUILDIMMGEN   => (p: Parameters) => Module(new ImmGenWire()(p))
-  case MEMDEPTH => 128
+  case MEMDEPTH => 64
 })
 
 class Main {
